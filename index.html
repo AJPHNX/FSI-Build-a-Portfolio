@@ -2,36 +2,91 @@
 <html>
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>My Portfolio</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <meta name="pinterest" content="nopin">
+  <link  rel="stylesheet" href="css/styles.css">
+  <title>My Portfolio</title>
 </head>
 
 <body>
-    <H1>
-        My Portfolio
-    </H1>
-    <!-- 
-      Directions:
-        1. Create a DIV element to contain the page content
-        2. Inside your DIV, create an H1 tag that contains your name as the text
-        3. Below your H1 tag, create an H2 tag that contains the content text "Software Developer"
-        4. Below your H2 tag, create an HR tag which will make a horizontal line
-        5. Create a paragraph tag and put a sentence of your choice in it. (Suggestion: "My favorite thing about programming is _______")
-        6. Make the word "favorite" italicized
-        7. Make an image tag with the src attribute linked to a picture of yourself or of a placeholder image. Make sure you make an alt attribute too!
-        8. Create an H3 tag that says "About Me"
-        9. Create a paragraph tag that contains the "lorem ipsum" text. You will need to do a search for this text - it is long!
-        10. Create an H3 tag that says "My Projects"
-        11. Create an unordered list with 3 list items that say "Project 1", "Project 2", and "Project 3"
-        12. Add another H3 that contains "Contact Me" as text
-        13. Create a paragraph that contains a fake phone number, e.g., "Phone: (202) 555-1234"
-        14. Create a link tag (<a>) with a direction to mail to a fake email address. This is done by making a regular link, but in the href attribute, put mailto:fake@email.com (this opens up your email program with the TO field already filled out-try it!)
+  <div class="pageContainer">
+    <Div id="headingContainer">
+      
+        <!-- 
+          Directions:
+            1. Create a DIV element to contain the page content
+            2. Inside your DIV, create an H1 tag that contains your name as the text
+            3. Below your H1 tag, create an H2 tag that contains the content text "Software Developer"
+            4. Below your H2 tag, create an HR tag which will make a horizontal line
+            5. Create a paragraph tag and put a sentence of your choice in it. (Suggestion: "My favorite thing about programming is _______")
+            6. Make the word "favorite" italicized
+            7. Make an image tag with the src attribute linked to a picture of yourself or of a placeholder image. Make sure you make an alt attribute too!
+            8. Create an H3 tag that says "About Me"
+            9. Create a paragraph tag that contains the "lorem ipsum" text. You will need to do a search for this text - it is long!
+            10. Create an H3 tag that says "My Projects"
+            11. Create an unordered list with 3 list items that say "Project 1", "Project 2", and "Project 3"
+            12. Add another H3 that contains "Contact Me" as text
+            13. Create a paragraph that contains a fake phone number, e.g., "Phone: (202) 555-1234"
+            14. Create a link tag (<a>) with a direction to mail to a fake email address. This is done by making a regular link, but in the href attribute, put mailto:fake@email.com (this opens up your email program with the TO field already filled out-try it!)
 
-        BONUS: Try one of the following ideas if you finish early
-          - Switch out your lorem ipsum for Hipster Ipsum (https://hipsum.co/)
-          - In your contact me section, make the text "Phone:" and "Email:" bolded
-     -->
+            BONUS: Try one of the following ideas if you finish early
+              - Switch out your lorem ipsum for Hipster Ipsum (https://hipsum.co/)
+              - In your contact me section, make the text "Phone:" and "Email:" bolded
+      -->
+    
+      
+      <H2>
+        My
+      </H2>
+      <H1>Software Developer</H1>
+      <H2>
+        Portfolio
+      </H2>
+      <H4>
+        by
+      </H4>
+      <H1>AJ Phoenix</H1>
+      <hr>
+
+      <p id="tagLine">My <i>favorite</i> thing about programming is _______</p>
+    </Div>
+    <Div id="contentFrame">
+      <Div id="picFrame">
+        <img src="images/SelfPortrait_BlinkWink.gif" alt="AJPHNX gif">
+      </Div>
+     <!-- <Div id="lowerContent">-->
+        <Div id='aboutText'>
+          <h3>About Me</h3>
+          <hr/>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vehicula diam diam, ut laoreet mi malesuada
+            in. Nunc commodo vehicula efficitur. Aenean auctor metus in sem ornare, id lobortis risus ornare. Etiam non quam
+            nec lectus molestie semper aliquam a erat. Aliquam vitae commodo enim, vitae varius nisi. Etiam iaculis, ante
+            tincidunt cursus venenatis, ante odio accumsan ante, sit amet molestie neque est vel est. Aenean ut purus sit
+            amet augue accumsan molestie eu et enim. Curabitur tincidunt dignissim metus quis porttitor. Aliquam nec purus
+            quis metus ullamcorper dictum nec sit amet augue. Curabitur quis feugiat libero, nec placerat ligula. Aenean
+            gravida justo urna, id commodo nisi rutrum nec. Mauris sed tempor lectus. Mauris lobortis ex ut mollis
+            dignissim. In ornare quam vitae magna venenatis, a laoreet magna malesuada. Nam vel sagittis nulla. Nulla
+            aliquet elementum varius.
+          </p>
+        </Div>
+      <Div id="projectList">
+        <ul>
+          <h3>Some Projects</h3>
+          <li>Project 1</li>
+          <li>Project 2</li>
+          <li>Project 3</li>
+        </ul>
+      </Div>
+      <Div id="contactInfo">
+        <h3>Contact Me</h3>
+        <p><b>Phone:</b>(***) ***-1234</p>
+        <b>Email:</b> <a href="mailto:RandomEmail@email.com">Not My Email Yet </a>
+      </Div>
+      <!--</Div>-->
+    </Div>
+  </div>
 </body>
 
 </html>
