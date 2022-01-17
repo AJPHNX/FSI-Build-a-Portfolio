@@ -21,10 +21,10 @@ body{
 }
 
 .contactButton {position: sticky;margin: 0;}
-
-#contactId {margin: 0;}
-.contactInfo{margin: 0;}
 */
+#contactId {margin: 0;}
+.contactInfo  {margin: 0;}
+
 
   .left {float: left;}
   .right {float: right;}
@@ -180,7 +180,7 @@ body{
     display: block;
     position: absolute;
     bottom: 10%;
-    left: 25%;
+    left: 10%;
     width: 50%;
     height: 3rem;
     line-height: 3rem;

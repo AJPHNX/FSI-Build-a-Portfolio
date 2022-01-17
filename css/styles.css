@@ -5,7 +5,7 @@ li {list-style-type: none; padding: 0; margin: 0;}
 a:link{text-decoration: none;}
 
 html {
-    background: url('images/Origins_Expanded_Resize_Lo.jpg') repeat 0 0;
+    background: url('images/Origins_Expanded_Resize_Lo.jpg') no-repeat 0 0;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -14,7 +14,6 @@ html {
     
 }
 @media screen and (max-width: 7648px){
-
 }
 body {
     /*background-image: url('images/Origins_Expanded.jpg');
@@ -22,9 +21,9 @@ body {
     background-color: #fff;*/
     -webkit-box-shadow: inset 0px 0px 19px 9px rgba(0,0,0,0.48); 
     box-shadow: inset 0px 0px 19px 9px rgba(0,0,0,0.48);  
-    overflow:inherit; 
-    /*background-image: url('images/Origins_Expanded_Resize_Lo.jpg');*/
-    max-height: auto;
+    /*overflow:inherit; 
+    background-image: url('images/Origins_Expanded_Resize_Lo.jpg');
+    max-height: 100%;*/
 }
     
 #headBanner {
@@ -38,7 +37,6 @@ body {
     margin: auto;
     background: rgb(255,255,255);
     background: linear-gradient(180deg, rgba(255,255,255,1) 42%, rgba(255,255,255,0.16010154061624648) 87%, rgba(255,255,255,0) 100%);
-
 }
 @keyframes float {
 	0% {
@@ -98,7 +96,8 @@ body {
 #contentFrame {
     display: block;
     margin: auto; 
-    z-index: 2;
+   
+    z-index: 99;
     background-color: #FFF;color: #000;
     -webkit-box-shadow: -2px 0px 20px 3px rgba(0,0,0,0.35); 
     box-shadow: -2px 0px 20px 3px rgba(0,0,0,0.35);
@@ -111,13 +110,12 @@ body {
     z-index: 3;
     line-height: 85%;
     background-color: #FFF;
-     -webkit-box-shadow: -2px 0px 20px 3px rgba(0,0,0,0.35); 
+    -webkit-box-shadow: -2px 0px 20px 3px rgba(0,0,0,0.35); 
     box-shadow: -2px 0px 20px 3px rgba(0,0,0,0.35);
     padding-top: 10px;
     padding-bottom: 10px;
     margin-bottom: 10px;
     text-justify: center;
-    
 }
 #tagLine{
     display: block;
@@ -175,18 +173,19 @@ body {
     margin: auto;*/
     margin: 0px;
 }
-#contactButton {
+.contactButton {
     width: auto;
+    left: 0px;
     z-index: 999;
 }
 #actualButton {
     /*position: fixed;
     display: inline-block;*/
     background-color: #FFF;
-    left: 0px;
+   /* left: 0px;*/
     padding: 0px;
     z-index: 999;
-    float: left;
+    /*float: left;*/
     margin-left: 0px;
 }
 .contactInfo {
@@ -197,7 +196,6 @@ body {
 padding: 10px;
 }
 .buttonDecor{
-
 }
 #floatCard{
     position: relative;
