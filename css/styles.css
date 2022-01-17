@@ -4,6 +4,42 @@ h2 {font-family: Georgia, 'Times New Roman', Times, serif;}
 li {list-style-type: none; padding: 0; margin: 0;}
 a:link{text-decoration: none;}
 
+html {
+    background: url('images/Origins_Expanded_Resize_Lo.jpg') repeat 0 0;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background: no-repeat;
+    
+}
+@media screen and (max-width: 7648px){
+
+}
+body {
+    /*background-image: url('images/Origins_Expanded.jpg');
+    img {opacity: .5;}
+    background-color: #fff;*/
+    -webkit-box-shadow: inset 0px 0px 19px 9px rgba(0,0,0,0.48); 
+    box-shadow: inset 0px 0px 19px 9px rgba(0,0,0,0.48);  
+    overflow:inherit; 
+    /*background-image: url('images/Origins_Expanded_Resize_Lo.jpg');*/
+    max-height: auto;
+}
+    
+#headBanner {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 25%;
+    z-index: -1;
+    padding-top: 0px;
+    margin: auto;
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 42%, rgba(255,255,255,0.16010154061624648) 87%, rgba(255,255,255,0) 100%);
+
+}
 @keyframes float {
 	0% {
 		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
@@ -18,9 +54,37 @@ a:link{text-decoration: none;}
 		transform: translatey(0px);
 	}
 }
+
+@keyframes float2 {
+	0% {
+		/*box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);*/
+		transform: translatey(0px);
+        transform: translatex(0px);
+	}
+    25% {
+        
+    }
+	50% {
+		/*box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);*/
+		transform: translatey(-40px);
+        
+	}
+    75% {
+        transform: translatex(0px);
+        transform: translatex(-2px);
+    }
+	100% {
+		/*box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);*/
+		transform: translatey(0px);
+        transform: translatex(0px);
+        
+	}
+}
 .pageContainer div{
-    display: block;
-    margin: auto; 
+    /*display: block;
+    margin: auto; */
+    background-size: cover;
+    /*background-attachment: fixed;
     /*width: 30%;
     margin-left: auto;
     margin-right: auto;*/
@@ -28,15 +92,41 @@ a:link{text-decoration: none;}
     text-align: center;
    /* justify-content: center;*/
 }
+#pageContainer {
+    position: relative;
+}
 #contentFrame {
+    display: block;
+    margin: auto; 
+    z-index: 2;
     background-color: #FFF;color: #000;
     -webkit-box-shadow: -2px 0px 20px 3px rgba(0,0,0,0.35); 
     box-shadow: -2px 0px 20px 3px rgba(0,0,0,0.35);
     padding: 30px 10px;
+    width: 30%;
 }
-#headingContainer {}
+#headingContainer {
+    display: block;
+    margin: auto;
+    z-index: 3;
+    line-height: 85%;
+    background-color: #FFF;
+     -webkit-box-shadow: -2px 0px 20px 3px rgba(0,0,0,0.35); 
+    box-shadow: -2px 0px 20px 3px rgba(0,0,0,0.35);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    text-justify: center;
+    
+}
+#tagLine{
+    display: block;
+    margin: auto;
+}
 #picFrame {
-    z-index: 2;
+    display: block;
+    margin: auto;
+    z-index: 3;
     /*
     background: rgb(0,0,0);
     background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(0,0,0,0.7525385154061625) 46%, rgba(255,255,255,1) 100%);
@@ -56,14 +146,68 @@ a:link{text-decoration: none;}
     background-color: #000;   
     animation: float 6s ease-in-out infinite;
 }  
+#aboutText {
+    display: block;
+    margin: auto;
+}
 #projectList {
     margin: auto;
    /* background-color: chartreuse;
     justify-content: center;*/
 }
-#contactInfo{}
+#formId { 
+   /* position: relative;*/
+    top: 0px;
+    margin: auto;
+  }
+#contactButtonId {
+    /*position: absolute;*/
+    position: fixed;  
+    left: 0px;  
+    z-index: 999;
+    /*display: inline-block;*/
+    
+    top: 0px;
+    padding-top: 60px;
+    padding-bottom: 20px;
+    opacity: 85%;
+    /*width: 50%;
+    margin: auto;*/
+    margin: 0px;
+}
+#contactButton {
+    width: auto;
+    z-index: 999;
+}
+#actualButton {
+    /*position: fixed;
+    display: inline-block;*/
+    background-color: #FFF;
+    left: 0px;
+    padding: 0px;
+    z-index: 999;
+    float: left;
+    margin-left: 0px;
+}
+.contactInfo {
+    
+}
 
-#tagline p:{
+#tagline {
 padding: 10px;
 }
- 
+.buttonDecor{
+
+}
+#floatCard{
+    position: relative;
+    float: right;
+    top: 50%;
+    /*bottom: 0;*/
+    padding-right: 25px;
+    padding-bottom 200px;
+    background: rgb(255,255,255);
+    background: radial-gradient(circle, rgba(255,255,255,1) 15%, rgba(255,255,255,0.16010154061624648) 78%, rgba(255,255,255,0) 100%);
+    /**/
+    animation: float2 6s ease-in-out infinite;
+}
