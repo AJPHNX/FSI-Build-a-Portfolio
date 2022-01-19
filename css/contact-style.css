@@ -4,7 +4,6 @@ body {
   height: 100%;
   background: #f2f2f2;
 }
-
 h1,
 p {
   width: 100%;
@@ -12,199 +11,191 @@ p {
   margin: 0;
   padding: 1em 0;
 }
-
 p {
   padding: 0.5em 0;
-}
-
-body{
-}
-
-.contactButton {position: sticky;margin: 0;}
-*/
+}*/
 #contactId {margin: 0;}
-.contactInfo  {margin: 0;}
-
-
-  .left {float: left;}
-  .right {float: right;}
-  @media (max-width: 35em) {
-    .left,
-  .right { 
-      float: left;
-      clear: left;
-    }
+.contactInfo  {margin: 0;} 
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+@media (max-width: 35em) {
+  .left,
+.right {
+    float: left;
+    clear: left;
   }
-  
-  .form {
-    /*float: left;*/
-    width: 0;
-    height: 0;
-    margin-left: 5%;
-    background: #d9d9d9;
-    overflow: hidden;
-    position: absolute;
-    z-index: 10;
-    transition: height 0.5s ease, width 0.5s ease 0.5s;
-  }
-  .form h2 {
-    width: 100%;
-    text-align: center;
-    color: #333;
-    font-size: 2rem;
-    margin: 1.5rem 0 3rem;
-  }
+}
+.form {
+  width: 0;
+  height: 0;
+  margin-left: 5%;
+  background: #d9d9d9;
+  overflow: hidden;
+  position: absolute;
+  z-index: 10;
+  transition: height 0.5s ease, width 0.5s ease 0.5s;
+}
+.form h2 {
+  width: 100%;
+  text-align: center;
+  color: #333;
+  font-size: 2rem;
+  margin: 1.5rem 0 3rem;
+}
+.form form {
+  max-height: 100%;
+  height: auto;
+}
+@media (max-width: 35em) {
   .form form {
-    max-height: 100%;
     height: auto;
   }
-  @media (max-width: 35em) {
-    .form form {
-      height: auto;
-    }
-  }
+}
+.form .section {
+  width: 40%;
+  margin: 0 5%;
+  height: calc(100% - 5rem);
+  max-height: 100%;
+}
+@media (max-width: 35em) {
   .form .section {
-    width: 40%;
-    margin: 0 5%;
-    height: calc(100% - 5rem);
-    max-height: 100%;
+    width: 90%;
+    height: auto;
   }
-  @media (max-width: 35em) {
-    .form .section {
-      width: 90%;
-      height: auto;
-    }
-  }
-  .form ::-webkit-input-placeholder,
-  .form :-moz-placeholder,
-  .form ::-moz-placeholder,
-  .form :-ms-input-placeholder {
-    color: #999;
-  }
-  .form input[type=text],
-  .form input[type=email],
-  .form input[type=tel],
+}
+.form ::-webkit-input-placeholder,
+.form :-moz-placeholder,
+.form ::-moz-placeholder,
+.form :-ms-input-placeholder {
+  color: #999;
+}
+.form input[type=text],
+.form input[type=email],
+.form input[type=tel],
+.form textarea {
+  width: 100%;
+  box-sizing: border-box;
+  background-color: inherit;
+  border: none;
+  border-bottom: 1px solid #999;
+  outline: none;
+  color: #333;
+  transition: border-color 0.5s ease;
+}
+.form input[type=text]:focus,
+.form input[type=email]:focus,
+.form input[type=tel]:focus,
+.form textarea:focus {
+  border-color: #333;
+}
+.form input[type=text]::invalid,
+.form input[type=email]::invalid,
+.form input[type=tel]::invalid,
+.form textarea::invalid {
+  border-color: #B31B1B;
+}
+.form input[type=text],
+.form input[type=email],
+.form input[type=tel] {
+  height: 2.5rem;
+  margin-bottom: 1rem;
+}
+.form textarea {
+  resize: none;
+  height: 10rem;
+  line-height: 1.5rem;
+}
+@media (max-width: 35em) {
   .form textarea {
-    width: 100%;
-    box-sizing: border-box;
-    background-color: inherit;
-    border: none;
-    border-bottom: 1px solid #999;
-    outline: none;
-    color: #333;
-    transition: border-color 0.5s ease;
-  }
-  .form input[type=text]:focus,
-  .form input[type=email]:focus,
-  .form input[type=tel]:focus,
-  .form textarea:focus {
-    border-color: #333;
-  }
-  .form input[type=text]::invalid,
-  .form input[type=email]::invalid,
-  .form input[type=tel]::invalid,
-  .form textarea::invalid {
-    border-color: #B31B1B;
-  }
-  .form input[type=text],
-  .form input[type=email],
-  .form input[type=tel] {
     height: 2.5rem;
     margin-bottom: 1rem;
+    line-height: 2rem;
   }
-  .form textarea {
-    resize: none;
-    height: 10rem;
-    line-height: 1.5rem;
-  }
-  @media (max-width: 35em) {
-    .form textarea {
-      height: 2.5rem;
-      margin-bottom: 1rem;
-      line-height: 2rem;
-    }
-  }
+}
+.form .closeFormLabel,
+.form .sendForm {
+  position: absolute;
+  bottom: 1rem;
+  width: 40%;
+  margin: 0 5%;
+  right: 0;
+  text-align: center;
+  border: 1px solid #999;
+  padding: 0.5rem;
+  background: inherit;
+  cursor: pointer;
+  box-sizing: border-box;
+  transition: background-color 0.5s ease, border-color 0.5s ease;
+}
+.form .closeFormLabel:hover, .form .closeFormLabel:focus,
+.form .sendForm:hover,
+.form .sendForm:focus {
+  background-color: #cccccc;
+  border-color: #333;
+}
+@media (max-width: 35em) {
   .form .closeFormLabel,
-  .form .sendForm {
-    position: absolute;
-    bottom: 1rem;
-    width: 40%;
-    margin: 0 5%;
-    right: 0;
-    text-align: center;
-    border: 1px solid #999;
-    padding: 0.5rem;
-    background: inherit;
-    cursor: pointer;
-    box-sizing: border-box;
-    transition: background-color 0.5s ease, border-color 0.5s ease;
-  }
-  .form .closeFormLabel:hover, .form .closeFormLabel:focus,
-  .form .sendForm:hover,
-  .form .sendForm:focus {
-    background-color: #cccccc;
-    border-color: #333;
-  }
-  @media (max-width: 35em) {
-    .form .closeFormLabel,
-  .form .sendForm {
-      position: relative;
-      width: 90%;
-      left: 0;
-      margin-top: 1em;
-    }
-  }
-  .form .closeFormLabel {
-    left: 0;
-  }
-  @media (max-width: 35em) {
-    .form .closeFormLabel {
-      bottom: 1rem;
-    }
-  }
-  input.showForm {
-    display: none;
-  }
-  input.showForm:checked + .form {
+.form .sendForm {
+    position: relative;
     width: 90%;
-    height: 50%;
-    
-    box-shadow: 4px 5px 5px 5px #a6a6a6;
-    overflow: auto;
-    transition: width 0.5s ease, height 0.5s ease 0.5s;
-    /*position: fixed; */
+    left: 0;
+    margin-top: 1em;
   }
-  .showFormLabel {
-    margin: auto;
-    cursor: pointer;
-    display: block;
-    position: absolute;
-    bottom: 10%;
-    left: 10%;
-    width: 50%;
-    height: 3rem;
-    line-height: 3rem;
-    font-size: 1rem;
-    text-align: center;
-    color: #333;
-    border: 1px solid #999;
-    background: inherit;
-    z-index: 1;
-    transition: background-color 0.5s ease, border-color 0.5s ease;
+}
+.form .closeFormLabel {
+  left: 0;
+}
+@media (max-width: 35em) {
+  .form .closeFormLabel {
+    bottom: 1rem;
   }
-  .showFormLabel:hover, .showFormLabel:focus {
-    background-color: #000;
+}
+
+input.showForm {
+  display: none;
+}
+input.showForm:checked + .form {
+  width: 90%;
+  height: 50%;
+  box-shadow: 4px 5px 5px 5px #a6a6a6;
+  overflow: auto;
+  transition: width 0.5s ease, height 0.5s ease 0.5s;
+}
+
+.showFormLabel {
+  margin: auto;
+  cursor: pointer;
+  display: block;
+  position: absolute;
+  bottom: 10%;
+  left: 25%;
+  width: 50%;
+  height: 3rem;
+  line-height: 3rem;
+  font-size: 1rem;
+  text-align: center;
+  color: #333;
+  border: 1px solid #999;
+  background: inherit;
+  z-index: 1;
+  transition: background-color 0.5s ease, border-color 0.5s ease;
+}
+.showFormLabel:hover, .showFormLabel:focus {
+  background-color: #000;
     color: #fff;
     border-color: #333;
     -webkit-box-shadow: 0px -1px 5px 8px rgba(255,233,161,0.48); 
     box-shadow: 0px -1px 5px 8px rgba(255,233,161,0.48); 
-  }
-  @media (max-width: 35em) {
-    .showFormLabel {
-      width: 90%;
-      left: 5%;
-      background-coro: #FFF;
-    }
- 
 }
+@media (max-width: 35em) {
+  .showFormLabel {
+    width: 90%;
+    left: 5%;
+  }
+}
+
 /*# sourceMappingURL=contact-style.css.map */

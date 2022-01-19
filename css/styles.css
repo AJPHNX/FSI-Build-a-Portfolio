@@ -18,8 +18,7 @@ html {
 @media screen and (max-width: 7648px){
 }}*/
 body {
-    background-image: url('/images/Origins_Expanded_Resize_Lo.jpg');
-   /* img {opacity: .5;}*/
+    background-image: url('/images/Origins_Expanded_Resize_Lo.jpg') ;
     background-color: #fff;
     position: relative;/*
     overflow:visible; 
@@ -199,10 +198,12 @@ padding: 10px;
 }
 /*.buttonDecor{}*/
 #floatCard {
-    position: relative;
+    /*
+    position: relative;*/
+    display: inline;
     float: right;
     top: 50%;
-    /*bottom: 0;*/
+    bottom: 0;
     padding-right: 25px;
     padding-bottom: 10px;
     background: rgb(255,255,255);
